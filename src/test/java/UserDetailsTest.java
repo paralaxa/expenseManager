@@ -35,16 +35,6 @@ public class UserDetailsTest{
     @Autowired
     Environment env;
 
-    //    @Test
-    public void go() {
-        System.out.println("OK");
-        final User mrkvicka = userDao.findByUserName("mrkvicka");
-        final Set<UserRole> userRoles = mrkvicka.getUserRole();
-        for (UserRole userRole : userRoles) {
-            System.out.println(userRole.getRole());
-        }
-        Assert.assertNotNull(mrkvicka);
-    }
 
     @Test
     public void createExpense() {
