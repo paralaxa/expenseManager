@@ -13,8 +13,7 @@ import org.springframework.stereotype.Component;
 public class LogAspect {
 
     @After("@annotation(sk.stopangin.log.Loggable)")
-//@After("execution(public * *())")
-    public void loggingAdvice(){
+   public void loggingAdvice(){
         System.out.println("ASPECT LOG AFTER COMPLETED");
     }
 }
