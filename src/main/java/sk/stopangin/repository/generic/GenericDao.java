@@ -10,8 +10,9 @@ public class GenericDao<T> {
     @PersistenceContext
     private EntityManager entityManager;
 
-    public void create(T t){
-        entityManager.persist(t);
+    public T create(T t){
+         entityManager.persist(t);
+        return t;
     }
 
     public T findById(Class<T> tClass, Long id){
