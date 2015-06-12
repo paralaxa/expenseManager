@@ -1,4 +1,3 @@
-import junit.framework.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,13 +6,9 @@ import org.springframework.core.env.Environment;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import sk.stopangin.repository.ExpenseDao;
-import sk.stopangin.spring.security.model.User;
-import sk.stopangin.spring.security.model.UserRole;
 import sk.stopangin.spring.security.repository.UserDao;
 import sk.stopangin.to.CategoryDto;
 import sk.stopangin.to.ExpenseDto;
-
-import java.util.Set;
 
 /**
  * Created by myPC on 23. 5. 2015.
